@@ -14,8 +14,13 @@
                         {{-- 投稿内容 --}}
                         <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
                     </div>
+<<<<<<< HEAD
                     <div class='btn-toolbar' role="toolbar">
                     {{-- 投稿お気に入りボタンのフォーム --}}
+=======
+                    <div>
+                    {{-- ユーザ情報 --}}
+>>>>>>> f8fbcc4c3754fb8f5b1e8e0f8e60c1d7f1e6b27d
                     @include('user_favorite.favorite_button')
                         @if (Auth::id() == $micropost->user_id)
                             {{-- 投稿削除ボタンのフォーム --}}

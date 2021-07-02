@@ -10,10 +10,6 @@
                         {!! link_to_route('users.show', $micropost->user->name, ['user' => $micropost->user->id]) !!}
                         <span class="text-muted">posted at {{ $micropost->created_at }}</span>
                     </div>
-                    <div>
-                        {{-- 投稿内容 --}}
-                        <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
-                    </div>
                     <div class='btn-toolbar' role="toolbar">
                     {{-- 投稿お気に入りボタンのフォーム --}}
                     @include('user_favorite.favorite_button')
